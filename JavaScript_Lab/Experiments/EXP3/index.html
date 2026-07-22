@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grading System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Grading System</h1>
+
+        <form id="gradeForm">
+
+            <div class="input-group">
+                <label>Student Name</label>
+                <input type="text" id="studentName" placeholder="Enter Student Name">
+            </div>
+
+            <div class="input-group">
+                <label>Roll Number</label>
+                <input type="text" id="rollNumber" placeholder="Enter Roll Number">
+            </div>
+
+            <div class="input-group">
+                <label>Javascript</label>
+                <input type="number" id="javascript" min="0" max="100">
+            </div>
+
+            <div class="input-group">
+                <label>Computer Networks</label>
+                <input type="number" id="computer-networks" min="0" max="100">
+            </div>
+
+            <div class="input-group">
+                <label>Compiler Construction</label>
+                <input type="number" id="compiler-construction" min="0" max="100">
+            </div>
+
+            <div class="input-group">
+                <label>Data Compression</label>
+                <input type="number" id="data-compression" min="0" max="100">
+            </div>
+
+            <div class="input-group">
+                <label>Specialization(Data Science/AI/ML)</label>
+                <input type="number" id="specialization" min="0" max="100">
+            </div>
+
+            <button type="submit">Calculate Result</button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
