@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grading System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Enter Subject Marks</h1>
+    <form id="gradeForm">
+        <div class="input-group">
+            <label>JavaScript</label>
+            <input
+                type="number"
+                id="javascript"
+                placeholder="Enter Marks"
+                min="0"
+                max="100"
+                required
+            >
+        </div>
+        <div class="input-group">
+            <label>Computer Networks</label>
+            <input
+                type="number"
+                id="computer-networks"
+                placeholder="Enter Marks"
+                min="0"
+                max="100"
+                required
+            >
+        </div>
+        <div class="input-group">
+            <label>Compiler Construction</label>
+            <input
+                type="number"
+                id="compiler-construction"
+                placeholder="Enter Marks"
+                min="0"
+                max="100"
+                required
+            >
+        </div>
+        <div class="input-group">
+            <label>Data Compression</label>
+            <input
+                type="number"
+                id="data-compression"
+                placeholder="Enter Marks"
+                min="0"
+                max="100"
+                required
+            >
+        </div>
+        <div class="input-group">
+            <label>Specialization (AI / ML / Data Science)</label>
+            <input
+                type="number"
+                id="specialization"
+                placeholder="Enter Marks"
+                min="0"
+                max="100"
+                required
+            >
+        </div>
+        <button type="submit">
+            Generate Result
+        </button>
+        <button type="reset" class="reset-btn">
+            Reset
+        </button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

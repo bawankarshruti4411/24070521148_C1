@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Student Login</h1>
+    <form id="loginForm">
+        <div class="input-group">
+            <label>Student Name</label>
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter Student Name"
+                required
+            >
+        </div>
+        <div class="input-group">
+            <label>PRN Number</label>
+            <input
+                type="text"
+                id="prn"
+                placeholder="Enter PRN Number"
+                required
+            >
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                required
+            >
+        </div>
+        <button type="submit">
+            Login
+        </button>
+    </form>
+    <p
+        id="message"
+        style="
+        text-align:center;
+        margin-top:20px;
+        color:red;
+        font-weight:bold;">
+    </p>
+</div>
+<script src="login.js"></script>
+</body>
+</html>
