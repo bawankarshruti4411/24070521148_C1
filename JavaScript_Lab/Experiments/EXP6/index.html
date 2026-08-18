@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions & Email Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>String Functions & Email Analyzer</h1>
+        <p class="subtitle">
+            Analyze text using JavaScript String Functions and Regular Expressions
+        </p>
+        <textarea
+            id="textInput"
+            placeholder="Enter your text here...
+Example:
+Hello Shruti!
+Contact me at shruti@gmail.com
+You can also email test@example.com
+Invalid emails: abc@gmail, hello@, @domain.com">
+Hello Shruti!
+Contact me at shruti@gmail.com
+You can also email test@example.com
+Student email: student@college.edu
+Invalid emails:
+abc@gmail
+hello@
+@domain.com
+        </textarea>
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter a word/text to search using includes()"
+            >
+        </div>
+        <button onclick="analyzeText()">
+            Analyze Text
+        </button>
+        <div class="results">
+            <div class="card">
+                <h3>1. Uppercase</h3>
+                <p id="uppercase" class="output"></p>
+            </div>
+            <div class="card">
+                <h3>2. Lowercase</h3>
+                <p id="lowercase" class="output"></p>
+            </div>
+            <div class="card">
+                <h3>3. String Length</h3>
+                <p id="length" class="output"></p>
+            </div>
+            <div class="card">
+                <h3>4. includes() Search</h3>
+                <p id="includes" class="output"></p>
+            </div>
+            <div class="card">
+                <h3>5. Email Validation using Regex</h3>
+                <div id="emailSummary" class="output"></div>
+                <h4>Valid Emails</h4>
+                <div id="validEmails"></div>
+                <h4>Invalid Emails</h4>
+                <div id="invalidEmails"></div>
+            </div>
+            <div class="card">
+                <h3>6. Text Analysis using split()</h3>
+                <p id="wordCount" class="output"></p>
+                <h4>Words</h4>
+                <div id="words"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

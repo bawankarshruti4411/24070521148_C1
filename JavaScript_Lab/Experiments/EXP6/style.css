@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: linear-gradient(135deg, #96d0c7, #6ebf94);
+    min-height: 100vh;
+    padding: 30px;
+}
+.container {
+    max-width: 950px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+textarea {
+    width: 100%;
+    height: 160px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    resize: vertical;
+    font-size: 16px;
+
+    outline: none;
+}
+textarea:focus {
+    border-color: #667eea;
+}
+.search-box {
+    margin-top: 15px;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+input:focus {
+    border-color: #667eea;
+}
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #5568d8;
+}
+.results {
+    margin-top: 20px;
+}
+.card {
+    background: #f5f6fa;
+    margin: 15px 0;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+}
+.card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.card h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #444;
+}
+.output {
+    color: #555;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+.email {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 6px 10px;
+    margin: 4px;
+    border-radius: 5px;
+}
+.invalid-email {
+    display: inline-block;
+    background: #ffdddd;
+    color: red;
+    padding: 6px 10px;
+    margin: 4px;
+    border-radius: 5px;
+}
+.valid {
+    color: green;
+    font-weight: bold;
+}
+.invalid {
+    color: red;
+    font-weight: bold;
+}
+.word {
+    display: inline-block;
+    background: #e8eaff;
+    color: #444;
+    padding: 5px 8px;
+    margin: 3px;
+    border-radius: 4px;
+}
+.count-box {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.count {
+    padding: 12px 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.1);
+}
