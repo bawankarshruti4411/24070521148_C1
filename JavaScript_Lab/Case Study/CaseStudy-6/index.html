@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript String Operations</h1>
+            <p>Explore and perform different string operations</p>
+        </header>
+        <section class="card">
+            <h2>Basic String Operations</h2>
+            <input 
+                type="text" 
+                id="basicString" 
+                placeholder="Enter a string"
+            >
+            <button onclick="performBasicOperations()">
+                Perform Operations
+            </button>
+            <div id="basicResult" class="result"></div>
+        </section>
+        <section class="card">
+            <h2>Reverse a String</h2>
+            <input 
+                type="text" 
+                id="reverseInput" 
+                placeholder="Enter a string to reverse"
+            >
+            <button onclick="reverseString()">
+                Reverse String
+            </button>
+            <div id="reverseResult" class="result"></div>
+        </section>
+        <section class="card">
+            <h2>Count Vowels in a Paragraph</h2>
+            <textarea 
+                id="paragraphInput"
+                placeholder="Enter a paragraph here..."
+            ></textarea>
+            <button onclick="countVowels()">
+                Count Vowels
+            </button>
+            <div id="vowelResult" class="result"></div>
+        </section>
+        <footer>
+            <p>Shruti Bawankar 24070521148</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

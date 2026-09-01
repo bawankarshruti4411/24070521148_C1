@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, sans-serif;
+    background: url("images/background.png") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+header {
+    text-align: center;
+    color: rgb(21, 20, 20);
+    margin-bottom: 30px;
+}
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.card h2 {
+    margin-bottom: 20px;
+    color: #0a0b0b;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+input:focus,
+textarea:focus {
+    border-color: #667eea;
+}
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+button {
+    background: linear-gradient(135deg, #667eea, #5367ae);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+.result {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f5f6ff;
+    border-left: 5px solid #667eea;
+    border-radius: 8px;
+    line-height: 1.8;
+    display: none;
+}
+.result strong {
+    color: #5a4fcf;
+}
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 14px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    .card {
+        padding: 20px;
+    }
+}
