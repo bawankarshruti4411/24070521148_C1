@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Gym - Admission</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="logo">
+                    <span>FIT</span>ZONE
+                </div>
+                <p class="tagline">TRAIN • SWEAT • ACHIEVE</p>
+                <h1>
+                    Build Your
+                    <span>Stronger</span>
+                    Self.
+                </h1>
+                <p class="hero-text">
+                    Take the first step toward a healthier,
+                    stronger and more confident you.
+                </p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">💪</div>
+                        <div>
+                            <strong>Premium Equipment</strong>
+                            <p>Train with modern equipment.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔥</div>
+                        <div>
+                            <strong>Expert Training</strong>
+                            <p>Achieve your fitness goals.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <div>
+                            <strong>Flexible Plans</strong>
+                            <p>Choose a plan that suits you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="form-card">
+                <div class="form-header">
+                    <div>
+                        <h2>Gym Admission</h2>
+                        <p>Start your fitness journey today</p>
+                    </div>
+                </div>
+                <form id="gymForm">
+                    <div class="form-group">
+                        <label for="fullName">
+                            Full Name
+                        </label>
+                        <div class="input-wrapper">
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                            >
+                        </div>
+                        <span id="nameError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address
+                        </label>
+                        <div class="input-wrapper">
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                            >
+                        </div>
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">
+                            Mobile Number
+                        </label>
+                        <div class="input-wrapper">
+                            <input
+                                type="tel"
+                                id="mobile"
+                                placeholder="Enter 10-digit mobile number"
+                                maxlength="10"
+                                autocomplete="tel"
+                            >
+                        </div>
+                        <span id="mobileError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">
+                            Age
+                        </label>
+                        <div class="input-wrapper">
+                            <input
+                                type="number"
+                                id="age"
+                                placeholder="Enter your age"
+                                min="10"
+                                max="100"
+                            >
+                        </div>
+                        <span id="ageError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan">
+                            Membership Plan
+                        </label>
+                        <div class="input-wrapper">
+                            <select id="plan">
+                                <option value="">
+                                    Select your membership
+                                </option>
+                                <option value="Monthly">
+                                    Monthly
+                                </option>
+                                <option value="Quarterly">
+                                    Quarterly
+                                </option>
+                                <option value="Yearly">
+                                    Yearly
+                                </option>
+                            </select>
+                        </div>
+                        <span id="planError" class="error"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Join FitZone</span>
+                        <span class="arrow">
+                            →
+                        </span>
+                    </button>
+                    <div
+                        id="successMessage"
+                        class="success-message"
+                    ></div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
