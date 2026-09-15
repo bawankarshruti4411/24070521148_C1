@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preference Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="intro">
+            <p class="label">
+                SHRUTI BAWANKAR
+            </p>
+            <h1>
+                Make it feel<br>
+                like yours.
+            </h1>
+            <p class="description">
+                Choose your theme and where to store it.
+                PRN : 24070521148
+            </p>
+            <button
+                id="resetLink"
+                class="reset-link">
+                Reset all settings
+            </button>
+            <div class="current-card">
+                <div class="current-header">
+                    <div class="current-icon">
+                        ⚙
+                    </div>
+                    <div>
+                        <h2>
+                            Current Preference
+                        </h2>
+                        <p>
+                            Here's what's currently applied.
+                        </p>
+                    </div>
+                </div>
+                <div class="current-row">
+                    <div class="row-icon theme-row-icon">
+                        ●
+                    </div>
+                    <span>
+                        Theme
+                    </span>
+                    <strong id="currentTheme">
+                        Not selected
+                    </strong>
+
+                </div>
+                <div class="current-row">
+                    <div class="row-icon storage-row-icon">
+                        ▤
+                    </div>
+                    <span>
+                        Storage Method
+                    </span>
+                    <strong id="currentStorage">
+                        Not selected
+                    </strong>
+                </div>
+            </div>
+        </section>
+        <section class="settings-card">
+            <div class="setting-section">
+                <div class="step-number">
+                    01
+                </div>
+                <div class="setting-content">
+                    <h2>
+                        Choose a theme
+                    </h2>
+                    <p class="hint">
+                        Select the appearance you prefer.
+                    </p>
+                    <div class="choice-grid">
+                        <label class="choice">
+                            <input
+                                type="radio"
+                                name="theme"
+                                value="light"
+                            >
+                            <div class="choice-icon light-icon">
+                                ☀
+                            </div>
+                            <div class="choice-text">
+                                <strong>
+                                    Light
+                                </strong>
+                                <span>
+                                    Bright and clear
+                                </span>
+                            </div>
+                            <span class="radio"></span>
+                        </label>
+                        <label class="choice">
+                            <input
+                                type="radio"
+                                name="theme"
+                                value="dark"
+                            >
+                            <div class="choice-icon dark-icon">
+                                ☾
+                            </div>
+                            <div class="choice-text">
+                                <strong>
+                                    Dark
+                                </strong>
+                                <span>
+                                    Easy on the eyes
+                                </span>
+                            </div>
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setting-section">
+                <div class="step-number">
+                    02
+                </div>
+                <div class="setting-content">
+                    <h2>
+                        Save preference using
+                    </h2>
+                    <p class="hint">
+                        Choose where to store your theme setting.
+                    </p>
+                    <div class="choice-grid">
+                        <label class="choice">
+                            <input
+                                type="radio"
+                                name="storage"
+                                value="local"
+                            >
+                            <div class="choice-icon storage-icon">
+                                ▤
+                            </div>
+                            <div class="choice-text">
+                                <strong>
+                                    Local Storage
+                                </strong>
+                                <span>
+                                    Stays even after you close
+                                    the browser
+                                </span>
+                            </div>
+                            <span class="radio"></span>
+                        </label>
+                        <label class="choice">
+                            <input
+                                type="radio"
+                                name="storage"
+                                value="session"
+                            >
+                            <div class="choice-icon session-icon">
+                                ▣
+                            </div>
+                            <div class="choice-text">
+                                <strong>
+                                    Session Storage
+                                </strong>
+                                <span>
+                                    Stays only for the current
+                                    browser session
+                                </span>
+                            </div>
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setting-section last-section">
+                <div class="step-number">
+                    03
+                </div>
+                <div class="setting-content">
+                    <h2>
+                        Save or clear
+                    </h2>
+                    <p class="hint">
+                        Apply your selected preference or remove it.
+                    </p>
+                    <div class="action-buttons">
+                        <button
+                            id="saveBtn"
+                            class="save-btn">
+                            Save Preference
+                        </button>
+                        <button
+                            id="clearBtn"
+                            class="clear-btn">
+                            Clear Preference
+                        </button>
+                    </div>
+                    <p
+                        id="message"
+                        class="message">
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
